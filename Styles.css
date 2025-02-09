@@ -1,83 +1,128 @@
-/* Google Style-Inspired CSS */
-
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-
-/* Base Styling */
-body {
-  font-family: 'Roboto', sans-serif;
-  color: #202124; /* Google's primary text color */
-  background-color: #ffffff; /* White background */
+/* General Reset */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-/* Header */
+/* Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #1a1a1a;
+  color: #f5f5f5;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Header Styling */
 header {
-  background-color: #4285F4; /* Google's blue */
-  color: #ffffff; /* White text */
-  padding: 20px;
   text-align: center;
-  font-size: 1.5em;
-  font-weight: 500;
+  padding: 50px 20px;
+  background-color: #121212;
+  border-bottom: 2px solid #444;
 }
 
-/* Links */
-a {
-  color: #1a73e8; /* Google link color */
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
+header h1 {
+  font-size: 3rem;
+  color: #e0e0e0;
+  margin-bottom: 10px;
 }
 
-/* Buttons */
-button {
-  background-color: #4285F4; /* Blue */
-  color: #ffffff; /* White */
-  border: none;
-  border-radius: 4px;
-  padding: 10px 20px;
-  font-size: 1em;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-button:hover {
-  background-color: #357ae8; /* Slightly darker blue */
+header p {
+  font-size: 1.2rem;
+  color: #b0b0b0;
 }
 
-/* Card Component */
-.card {
-  border: 1px solid #dadce0; /* Light gray border */
-  border-radius: 8px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin: 20px;
-  background-color: #ffffff;
-}
-
-/* Footer */
-footer {
-  background-color: #f1f3f4; /* Light gray */
-  color: #5f6368; /* Secondary text color */
-  text-align: center;
+/* Navigation Styling */
+nav {
+  background-color: #121212;
   padding: 10px;
-  font-size: 0.875em;
+  margin: 20px 0;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #e0e0e0;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ff6f61;
+}
+
+/* Section Styling */
+section {
+  padding: 40px 20px;
+  margin: 20px 0;
+  background-color: #121212;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+section h2 {
+  font-size: 2rem;
+  color: #e0e0e0;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #444;
+  padding-bottom: 10px;
+}
+
+section p {
+  font-size: 1rem;
+  color: #b0b0b0;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #121212;
+  border-top: 2px solid #444;
+  margin-top: 40px;
+}
+
+footer p {
+  font-size: 0.9rem;
+  color: #b0b0b0;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  header {
-    font-size: 1.2em;
+  header h1 {
+      font-size: 2rem;
   }
-  button {
-    font-size: 0.9em;
-    padding: 8px 16px;
+
+  header p {
+      font-size: 1rem;
   }
-  .card {
-    margin: 10px;
-    padding: 15px;
+
+  nav ul {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  nav ul li {
+      margin: 10px 0;
+  }
+
+  section h2 {
+      font-size: 1.5rem;
+  }
+
+  section p {
+      font-size: 0.9rem;
   }
 }
-
