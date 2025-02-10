@@ -614,10 +614,6 @@ section {
   padding-bottom: 7rem;
 }
 
-.testimonials .wrapper {
-  grid-template-columns: repeat(1, 1fr); /* Corrected grid-template-columns */
-}
-
 .contact form {
   flex-direction: column;
 }
