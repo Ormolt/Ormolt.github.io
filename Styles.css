@@ -304,6 +304,7 @@ span {
 
 .about-img {
   border-radius: 50%;
+  overflow: hidden;
 }
 
 .about-img img{
@@ -327,12 +328,6 @@ span {
   font-weight: 500;
   line-height: 1.8;
   max-width: 1000px;
-}
-
-.heading {
-  font-size: 8rem;
-  text-align: center;
-  margin: 5rem 0;
 }
 
 .education {
