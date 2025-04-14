@@ -13,7 +13,7 @@
   --bg-color: #080808;
   --second-bg-color: #131313;
   --text-color: white;
-  --main-color: #02e8d8;
+  --main-color: #00ffa6;
 }
 
 html {
@@ -32,7 +32,7 @@ body {
   left: 0;
   width: 100%;
   padding: 4rem 12% 4rem;
-  background: rgba(0, 0, 0, 0.3); /* Corrected background property */
+  background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
   display: flex;
   justify-content: space-between;
