@@ -11,7 +11,7 @@
 
 :root {
   --bg-color: #080808;
-  --second-bg-color: #131313;
+  --second-bg-color: #000c07;
   --text-color: white;
   --main-color: #00ff88;
 }
@@ -281,7 +281,7 @@ span {
   justify-content: center;
   gap: 5rem;
   padding: 5rem 2rem;
-  background: var(--bg-color);
+  background: var(--second-bg-color);
 }
 
 .about-container {
