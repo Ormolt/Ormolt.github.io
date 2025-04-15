@@ -31,7 +31,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 4rem 12% 4rem;
+  padding: 3rem 12% 3rem;
   background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
   display: flex;
@@ -53,7 +53,7 @@ body {
 }
 
 .logo span {
-  text-shadow: 0 0 25px var(--main-color);
+  text-shadow: 0 0 20px var(--main-color);
 }
 
 .navbar a {
@@ -107,10 +107,11 @@ span {
 }
 
 .home-content h1 {
-  font-size: 7rem;
+  font-size: clamp(2rem, 6vw, 6.5rem);
   font-weight: 700;
   margin-top: 1.5rem;
-  line-height: 1;
+  line-height: 1.2;
+  white-space: nowrap;
 }
 
 .home-content h3 {
@@ -739,11 +740,6 @@ footer {
 
 .home-content h3 {
   font-size: 2.6rem;
-}
-
-.home-content h1 {
-  font-size: 8rem;
-  margin-top: 3rem;
 }
 
 .home-content p {
