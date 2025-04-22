@@ -21,11 +21,40 @@ window.onscroll = () => {
 };
 
 
-
-
-
-
 menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
   };
+
+
+<script>
+  const form = document.getElementById('contact-form');
+  const popup = document.getElementById('success-popup');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault(); // Prevent default form submission
+
+    const formData = new FormData(form);
+
+    fetch(form.action, {
+      method: "POST",
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    }).then(response => {
+      if (response.ok) {
+        form.reset(); // Clear form fields
+        popup.style.display = 'block'; // Show success popup
+        // Optionally hide after a few seconds
+        setTimeout(() => {
+          popup.style.display = 'none';
+        }, 5000);
+      } else {
+        alert("Something went wrong. Please try again.");
+      }
+    }).catch(error => {
+      alert("There was a problem submitting the form.");
+    });
+  });
+</script>
