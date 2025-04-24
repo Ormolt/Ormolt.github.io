@@ -525,7 +525,7 @@ span {
   max-height: 200px;
   justify-content: flex-start; /* Changed to flex-start for left alignment */
   align-items: flex-start; /* Changed to flex-start for left alignment */
-  padding: 5rem 5rem;
+  padding: 3rem 3rem;
 }
 
 .service-info h4 {
@@ -649,15 +649,39 @@ span {
   color: white; /* Corrected color value */
 }
 
+/* Tablet view */
 @media (max-width: 1285px) {
   html {
     font-size: 55%;
   }
 
   .services-container {
-    padding-bottom: 7rem;
     grid-template-columns: repeat(2, 1fr);
-    margin: 0 5rem;
+    padding: 0 5rem 7rem;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .services-container {
+    grid-template-columns: 1fr;
+    padding: 0 2rem 5rem;
+  }
+
+  .service-box {
+    height: auto; /* Let the box expand naturally */
+  }
+
+  .service-box .service-info {
+    padding: 2rem;
+  }
+
+  .service-info h4 {
+    font-size: 2rem;
+  }
+
+  .service-info p {
+    font-size: 1.4rem;
   }
 }
 
