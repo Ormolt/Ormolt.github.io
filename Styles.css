@@ -385,12 +385,12 @@ span {
   background-color: var(--bg-color);
 }
 
-.education {
+.experience {
   padding: 100px 15px;
   background: var(--bg-color);
 }
 
-.education h2 {
+.experience h2 {
   margin-bottom: 5rem;
 }
 
